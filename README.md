@@ -19,3 +19,4 @@ Appointed as team lead is Estela Garcia with Kyle Morris as the team lead assist
 Trello URL: https://trello.com/invite/b/67edc524a3dd3f5b21b7a080/ATTI4f622add9fb82353ba7fd3982fe0147a23EC2778/my-trello-board
 
 
+https://discord.gg/xje5aF5e Discord Link
