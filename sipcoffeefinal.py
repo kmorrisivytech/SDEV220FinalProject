@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, Toplevel
-from PIL import Image,  ImageTk
+from PIL import Image, ImageTk
 
 # --- Item Classes ---
 
@@ -50,45 +50,44 @@ class SipCoffeeHousePOS:
         tk.Button(self.root, text="Checkout", command=self.checkout).pack(pady=5)
 
     def create_menu_buttons(self, parent):
-        # base path to image folder
-        base_path = r"C:\Users\egarc\OneDrive\Documents\pythonclass\sipcoffee"
+
         categories = [
             ("Hot Drinks", [
-                HotDrink("Latte", 4.40, f"{base_path}\\Latte.jpg"),
-                HotDrink("Drip", 3.00,f"{base_path}\\Drip.jpg" ),
-                HotDrink("Macchiato", 3.75, f"{base_path}\\Macchiato.jpg"),
-                HotDrink("Red Eye", 4.00, f"{base_path}\\RedEye.jpg"),
-                HotDrink("Traditional Espresso", 2.85, f"{base_path}\\TraditionalEspresso.jpg"),
-                HotDrink("Cappuccino", 4.40, f"{base_path}\\Cappuccino.jpg" ),
-                HotDrink("Cafe Americano", 3.45, f"{base_path}\\CafeAmericano.jpg"),
-                HotDrink("Cafe Con Leche", 4.65,f"{base_path}\\CafeConLeche.jpg" ),
-                HotDrink("Cafe Au Lait", 4.00, f"{base_path}\\CafeAuLait.jpg"),
-                HotDrink("Espresso Con Panna", 3.10,f"{base_path}\\EspressoConPanna.jpg" ),
-                HotDrink("Cuban Espresso", 3.10,f"{base_path}\\CubanEspresso.jpg" ),
-                HotDrink("Cortado", 3.50,f"{base_path}\\Cortado.jpg" )
+                HotDrink("Latte", 4.40, f"./Latte.jpg"),
+                HotDrink("Drip", 3.00,f"./Drip.jpg" ),
+                HotDrink("Macchiato", 3.75, f"./Macchiato.jpg"),
+                HotDrink("Red Eye", 4.00, f"./RedEye.jpg"),
+                HotDrink("Traditional Espresso", 2.85, f"./TraditionalEspresso.jpg"),
+                HotDrink("Cappuccino", 4.40, f"./Cappuccino.jpg" ),
+                HotDrink("Cafe Americano", 3.45, f"./CafeAmericano.jpg"),
+                HotDrink("Cafe Con Leche", 4.65,f"./CafeConLeche.jpg" ),
+                HotDrink("Cafe Au Lait", 4.00, f"./CafeAuLait.jpg"),
+                HotDrink("Espresso Con Panna", 3.10,f"./EspressoConPanna.jpg" ),
+                HotDrink("Cuban Espresso", 3.10,f"./CubanEspresso.jpg" ),
+                HotDrink("Cortado", 3.50,f"./Cortado.jpg" )
             ]),
             ("Signature Lattes", [
-                SignatureLattes("Cookie Dough", 5.75,f"{base_path}\\CookieDough.jpg" ),
-                SignatureLattes("Almond Joy", 5.75,f"{base_path}\\AlmondJoy.jpg" ),
-                SignatureLattes("Lucky Goat", 5.75, f"{base_path}\\LuckyGoat.jpg"),
-                SignatureLattes("Chunky Monkey", 5.75, f"{base_path}\\ChunkyMonkey.jpg"),
-               SignatureLattes("S'mores", 5.75, f"{base_path}\\S'more.jpg"),
-                SignatureLattes("Banana Foster", 5.75, f"{base_path}\\BananaFoster.jpg"),
-                SignatureLattes("Turtle", 5.75, f"{base_path}\\Turtle.jpg"),
-                SignatureLattes("Nutella", 5.75, f"{base_path}\\Nutella.jpg"),
-                SignatureLattes("Mexican Mocha", 5.75, f"{base_path}\\MexicanMocha.jpg"),
-                SignatureLattes("Honey Bee", 5.75, f"{base_path}\\HoneyBee.jpg"),
-                SignatureLattes("Zebra", 5.75, f"{base_path}\\Zebra.jpg"),
-                SignatureLattes("Fight Club", 5.75, f"{base_path}\\FightClub.jpg")
+                SignatureLattes("Cookie Dough", 5.75,f"./CookieDough.jpg" ),
+                SignatureLattes("Almond Joy", 5.75,f"./AlmondJoy.jpg" ),
+                SignatureLattes("Lucky Goat", 5.75, f"./LuckyGoat.jpg"),
+                SignatureLattes("Chunky Monkey", 5.75, f"./ChunkyMonkey.jpg"),
+               SignatureLattes("S'mores", 5.75, f"./S'more.jpg"),
+                SignatureLattes("Banana Foster", 5.75, f"./BananaFoster.jpg"),
+                SignatureLattes("Turtle", 5.75, f"./Turtle.jpg"),
+                SignatureLattes("Nutella", 5.75, f"./Nutella.jpg"),
+                SignatureLattes("Mexican Mocha", 5.75, f"./MexicanMocha.jpg"),
+                SignatureLattes("Honey Bee", 5.75, f"./HoneyBee.jpg"),
+                SignatureLattes("Zebra", 5.75, f"./Zebra.jpg"),
+                SignatureLattes("Fight Club", 5.75, f"./FightClub.jpg")
             ]),
         
             ("Food", [
-                Food("Quiche of the Day", 10.35, f"{base_path}\\Quiche.jpg"),
-                Food("French Toast Sticks", 6.95, f"{base_path}\\SipCoffeeHouseAndArtisanCafeFrenchToastSticks.jpg"),
-                Food("Breakfast Grilled Cheese", 8.25, f"{base_path}\\SipCoffeeHouseAndArtisanBreakfastGrilledCheese.jpg"),
-                Food("Old-Fashioned Oatmeal", 5.65, f"{base_path}\\OldFashionOats.jpg"),
-                Food("The Hipster", 5.65, f"{base_path}\\SipCoffeeAndArtisanCafeHipster.jpg"),
-                Food("Avocado Toast", 9.95, f"{base_path}\\SipCoffeeHouseAvocadoToast.jpg")
+                Food("Quiche of the Day", 10.35, f"./Quiche.jpg"),
+                Food("French Toast Sticks", 6.95, f"./SipCoffeeHouseAndArtisanCafeFrenchToastSticks.jpg"),
+                Food("Breakfast Grilled Cheese", 8.25, f"./SipCoffeeHouseAndArtisanBreakfastGrilledCheese.jpg"),
+                Food("Old-Fashioned Oatmeal", 5.65, f"./OldFashionOats.jpg"),
+                Food("The Hipster", 5.65, f"./SipCoffeeAndArtisanCafeHipster.jpg"),
+                Food("Avocado Toast", 9.95, f"./SipCoffeeHouseAvocadoToast.jpg")
             ]),
         ]
 
@@ -96,7 +95,6 @@ class SipCoffeeHousePOS:
             frame = tk.LabelFrame(parent, text=label, padx=10, pady=5)
             frame.grid(row=0, column=idx, padx=10)
             for item in items:
-                
                 b = tk.Button(frame, text=f"{item.name} - ${item.price:.2f}", 
                              command=lambda i=item: self.handle_item_click(i))
                 b.pack(anchor='w', pady=2)
